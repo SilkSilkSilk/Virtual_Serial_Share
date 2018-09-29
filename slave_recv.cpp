@@ -55,7 +55,6 @@ bool Slave_recv::eventFilter(QObject *obj, QEvent *event)
         }
         else if(event->type() == QEvent::Wheel)
         {
-            //qDebug() << "other case" << event->type();
             ui->scrollArea->wheelEvent(reinterpret_cast<QWheelEvent*>(event));
             return true;
         }
