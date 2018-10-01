@@ -6,13 +6,13 @@
 
 class my_ScrollArea : public QScrollArea
 {
-    Q_OBJECT
+	Q_OBJECT
 public:
-    my_ScrollArea(QWidget *parent = nullptr);
-    ~my_ScrollArea();
+	my_ScrollArea(QWidget* parent = nullptr);
+	~my_ScrollArea();
 
-    virtual void wheelEvent(QWheelEvent* event);
-    virtual bool eventFilter(QObject *obj, QEvent *event);
+	virtual void wheelEvent(QWheelEvent* event);
+	virtual bool eventFilter(QObject* obj, QEvent* event);
 };
 
 #endif // MY_SCROLLAREA_H
